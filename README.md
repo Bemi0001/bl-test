@@ -1,15 +1,12 @@
-# Black Lemon Product Page
+#  Product Page  task plan
 
-## Task plan
-
--  Set up Parcel project
--  Inspect Figma design
--  Export images/assets
--  Build mobile layout
--  Build desktop layout
--  Add product section
--  Add add-to-cart animation
--  Build "You may also like" carousel
--  Test responsiveness
--  Clean up code
--  Push to GitHub
+-  Set up Parcel project (Done)
+-  Inspect Figma design (Done)
+-  Export images/assets (Done)
+-  Build mobile layout (Done)
+-  Build desktop layout (Done)
+-  Add product section (Done)
+-  Add add-to-cart animation (Done)
+-  Build "You may also like" carousel (Done)
+-  Test responsiveness (Done)
+-  Push to GitHub (Done)

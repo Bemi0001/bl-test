@@ -128,3 +128,36 @@ clearCartButton.addEventListener("click", () => {
 
 updateQuantity();
 updateCartUI();
+
+const carouselTrack = document.querySelector(".carousel-track");
+const carouselPrev = document.querySelector(".carousel-prev");
+const carouselNext = document.querySelector(".carousel-next");
+const carouselCards = document.querySelectorAll(".recommendation-card");
+
+let carouselIndex = 0;
+
+function updateCarousel() {
+  if (!carouselTrack || carouselCards.length === 0) return;
+
+  const cardWidth = carouselCards[0].offsetWidth;
+  const gap = 52;
+  carouselTrack.style.transform = `translateX(-${carouselIndex * (cardWidth + gap)}px)`;
+}
+
+if (carouselPrev && carouselNext) {
+  carouselNext.addEventListener("click", () => {
+    if (carouselIndex < carouselCards.length - 3) {
+      carouselIndex += 1;
+      updateCarousel();
+    }
+  });
+
+  carouselPrev.addEventListener("click", () => {
+    if (carouselIndex > 0) {
+      carouselIndex -= 1;
+      updateCarousel();
+    }
+  });
+
+  window.addEventListener("resize", updateCarousel);
+}
